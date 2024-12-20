@@ -42,12 +42,14 @@ const PriceOptions = () => {
     },
   ];
 
-  return <div>
-    <h1>This is the price Option side:</h1>
-    {
-      priceOptions.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
-    }
-  </div>;
+  return (
+    <div>
+      <h1>This is the price Option side:</h1>
+      {priceOptions.map((option) => (
+        <PriceOption key={option.id} option={option}></PriceOption>
+      ))}
+    </div>
+  );
 };
 
 export default PriceOptions;
