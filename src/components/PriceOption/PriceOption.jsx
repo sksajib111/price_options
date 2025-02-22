@@ -3,16 +3,12 @@ import React from "react";
 const PriceOption = ({ option }) => {
   const { name, features, price } = option;
   return (
-    <div className="flex mx-auto">
-      <span className="text-3xl text-red-400">{name}</span>
-      <h2>
-        <span className="text-7xl">{price}</span>
-
+    <div className="bg-indigo-400 rounded-lg p-4 text-white">
+      <h2 className="text-center">
+        <span className="text-7xl font-extrabold">{price}</span>
         <span className="text-3xl">/mon</span>
       </h2>
-      <div>
-        <span className="text-2xl text-gray-500">{features}</span>
-      </div>
+      <h4 className="text-3xl text-center">{name}</h4>
     </div>
   );
 };
